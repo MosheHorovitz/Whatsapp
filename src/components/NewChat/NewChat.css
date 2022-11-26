@@ -1,0 +1,67 @@
+.newChat{
+  width: 27%;
+  max-width: 335px;
+  position: fixed;
+  left: 80px;
+  top: 60px;
+  border-radius: 20px;
+  bottom: 0;
+  background-color:#FFF;
+  display:flex;
+  flex-direction: column;
+  transition: all ease .3s;
+  z-index: 2;
+}
+.topo-transparent{
+  background-color:transparent !important;
+}
+.newChat--list{
+  flex: 1;
+  overflow-y: auto;
+}
+
+.newChat--list::-webkit-scrollbar{
+  width: 6px;
+  height: 6px;
+}
+.newChat--list::-webkit-scrollbar-thumb{
+  background-color: rgba(0, 0, 0, .2);
+}
+.newChat--item{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.newChat--item:hover{background-color: #F5F5F5}
+.newChat--itemAvatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.newChat--itemName{
+  font-size: 17px;
+  color: #000;
+}
+.newChat--closebutton{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.newChat--closebutton:hover{background-color: #F5F5F5;}
+.sidebar--chatlist-top{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.sidebar--chatlist-top h1{
+  font-size: 20px;
+}
